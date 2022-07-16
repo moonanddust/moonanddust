@@ -1,0 +1,37 @@
+/*这是我的第一个CSS文件*/
+body
+{
+    /*background: url(/Users/wangyuchen/Desktop/VSCode/moonanddust/background_test.png ); */
+    /*color: hsla(282,100%,25%,50%);*/
+    text-align: center;
+}
+img
+{
+    border:4px solid grey
+}
+article
+{
+    /*background-color:antiquewhite;*/
+    text-shadow: 2px 1px 5px orange;
+}
+#a
+{
+    color:cornflowerblue;
+}
+a:hover
+{
+    color:black
+}
+a:visited
+{
+    color:aqua
+}
+li
+{
+    text-decoration: overline;
+    letter-spacing: 2em;
+}
+strong
+{
+    word-spacing: 2em;
+}
