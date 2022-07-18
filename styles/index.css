@@ -9,7 +9,7 @@ h1
     font-size: 2.5em;
     position:relative;
     top: 0px;
-    left: 1.2em;
+    left: 2.7em;
 }
 nav
 {
@@ -28,22 +28,21 @@ li.nav
 {
     display: inline;
 }
-a:link,a:visited
+a.nav:link,a.nav:visited
 {
     color:#a44e60;
-    /*display:block;*/
 	font-weight:bold;
 	width:140px;
 	text-align:center;
 	padding:20px;
 	text-decoration:none;
 }
-a:hover,a:active
+a.nav:hover,a.nav:active
 {
     color:#a44e60;
     background-color: #e9dfe5;
 }
-a{
+a.nav{
     text-decoration: none;
 }
 div.s
@@ -55,4 +54,17 @@ img.main
     position:relative;
     top:-4em;
     left:2.7em;
+}
+img.logo
+{
+    height:4em;
+    width: 4em;
+    position:absolute;
+    left:3.1em;
+    top:1em;
+}
+a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
+{
+    text-decoration:none;
+    color:black;
 }
