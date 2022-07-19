@@ -93,3 +93,9 @@ footer
     float:left;
     width:90%;
 }
+a.d-title
+{
+    text-decoration: none;
+    color:royalblue;
+    font-size: 1.2em;
+}
