@@ -1,0 +1,113 @@
+body
+{
+    background-color: #fdeff2;
+    font-size: 100%;
+    width:100%;
+}
+div.top
+{
+    display:inline;
+}
+h1
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    float:left;
+    width:25%;
+}
+nav
+{
+    float:left;
+    font-size: 2.1875em;
+    font-family:'Times New Roman', Times, serif;
+    width:auto;
+    margin-left: 30px;
+}
+ul.nav
+{
+    list-style-type: none;
+}
+li.nav
+{
+    display: inline;
+}
+a.nav:link,a.nav:visited
+{
+    color:#a44e60;
+	font-weight:bold;
+	width:140px;
+	text-align:center;
+	padding:20px;
+	text-decoration:none;
+}
+a.nav:hover,a.nav:active
+{
+    color:#a44e60;
+    background-color: #e9dfe5;
+}
+a.nav{
+    text-decoration: none;
+}
+a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
+{
+    text-decoration:none;
+    color:black;
+}
+img.logo
+{
+    float:left;
+    width:5%;
+    margin-left: 30px;
+    margin-top: 1em;
+}
+div.left
+{
+    float:left;
+    width:55%;
+    margin-left:5%;
+}
+h2
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 2.2em;
+}
+p.content
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1.1em;
+    line-height: 200%;
+    text-indent:2em;
+}
+p.author,p.date
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1.1em;
+}
+div.images
+{
+    float:left;
+    width:30%;
+    margin-left: 40px;
+    margin-top: 115px;
+    overflow-y: auto;
+    height:50em;
+}
+img
+{
+    width:100%;
+    line-height: 100%;
+}
+.legend
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1em;
+    text-align: center;
+    line-height: 20%;
+}
+footer
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1em;
+    float:left;
+    width:90%;
+}
