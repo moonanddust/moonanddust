@@ -45,12 +45,13 @@ a.nav:hover,a.nav:active
     color:#a44e60;
     background-color: #e9dfe5;
 }
-a.nav{
+a.nav
+{
     text-decoration: none;
 }
 img.main
 {
-    width:93%;
+    width:94%;
     float:left;
     margin-left: 30px;
     padding-right: 30px;
@@ -110,11 +111,16 @@ h2.moon
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
 }
+h2.cd
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
 div.left
 {
     float:left;
     width:50%;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-top: -40px;
     margin: 0 0;
 }
@@ -128,4 +134,47 @@ footer
 {
     float:left;
     text-align: center;
+}
+div.d
+{
+    line-height: 100%;
+    font-size: 1.1em;
+}
+div.m
+{
+    line-height: 100%;
+    font-size: 1.1em;
+}
+img.a
+{
+    width:20px;
+    float:left;
+}
+ul.d
+{
+    list-style-type: none;
+    margin-left: -34px;
+}
+section.moon
+{
+    width:100%;
+}
+section.dust
+{
+    width:100%;
+}
+ul.recent
+{
+    line-height: 200%;
+    font-size: 1.1em;
+    margin-top: -10px;
+}
+a.recent
+{
+    text-decoration: none;
+    color:royalblue;
+}
+#pro
+{
+    font-size: 1.1em;
 }

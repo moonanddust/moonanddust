@@ -1,0 +1,107 @@
+body
+{
+    background-color: #fdeff2;
+    font-size: 100%;
+}
+h1
+{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    position:relative;
+    top: 0px;
+    left: 2.7em;
+}
+nav
+{
+    position:relative;
+    top:-2.2em;
+    left:11.5em;
+    font-size: 2.1875em;
+    font-family:'Times New Roman', Times, serif;
+}
+ul.nav
+{
+    list-style-type: none;
+    margin-left: 50px;
+}
+li.nav
+{
+    display: inline;
+}
+a.nav:link,a.nav:visited
+{
+    color:#a44e60;
+	font-weight:bold;
+	width:140px;
+	text-align:center;
+	padding:20px;
+	text-decoration:none;
+}
+a.nav:hover,a.nav:active
+{
+    color:#a44e60;
+    background-color: #e9dfe5;
+}
+a.nav{
+    text-decoration: none;
+}
+div.s
+{
+    text-align:justify;
+}
+img.main
+{
+    position:relative;
+    top:-4em;
+    left:2.7em;
+}
+img.logo
+{
+    height:4em;
+    width: 4em;
+    position:absolute;
+    left:3.1em;
+    top:1em;
+}
+a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
+{
+    text-decoration:none;
+    color:black;
+}
+section.recent
+{
+    border:#a44e60 solid 1px;
+    height:20em;
+    width:50%;
+    position:relative;
+    left:3em;
+    top:-3em;
+    margin:0 0;
+}
+section.dust
+{
+    position:relative;
+    left:45em;
+    top:-12em;
+}
+section.moon
+{
+    position:relative;
+    left:45em;
+    top:-11em;
+}
+h2.recent
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+h2.dust
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+h2.moon
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
