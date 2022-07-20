@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倒计时</title>
+</head>
+<body>
+    <div id="box">
+      
+    </div>
+
+    <script>
+        (function(){
+            // 获取元素对象
+            var box = document.getElementById('box');
+
+            // 定义目标日期时间的 date 对象
+            var targetDate = new Date("2022/07/31 00:00:00");
+
+            // 调用函数 初始化显示
+            runTime();
+
+            // 开启定时器
+            var intervalId = setInterval(runTime, 1000);
+
+            // 定义倒计时函数
+            function runTime() {
+                // 定义表示当前日期时间的 date 对象
+                var currentDate = new Date();
+
+                // 计算目标日期与当前日期相差的秒数
+                var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
+                
+                // 如果时间到了
+                if (dstSeconds <= 0) {
+                    // 定时器停止
+                    clearInterval(intervalId);
+                    // 设置元素中的文本内容
+                    box.innerHTML = '倒计时已经结束 ';
+                    // 结束函数
+                    return;
+                }
+                // 计算相差的秒数中包含的整的天数
+                var days = Math.floor(dstSeconds / (3600 * 24));
+
+                // 再从剩余的秒数中获取整的小时数
+                var seconds = dstSeconds - days * 24 * 3600; // 剩余的秒数
+                var hours = Math.floor(seconds / 3600);
+               
+                // 再从去除了整天整小时的 剩余的秒数中取整的分钟
+                seconds -= hours * 3600;  // 剩余的秒数（去除了整小时）
+                var minutes = Math.floor(seconds / 60);
+
+                // 计算去除了分钟剩余的秒数
+                seconds -= minutes * 60;
+                // 处理个位数补0
+                days = addZero(days);
+                hours = addZero(hours);
+                minutes = addZero(minutes);
+                seconds = addZero(seconds);
+                // 拼接字符串
+                var content = ' 距离一周年还有<br>' + days + '天' + hours + '小时' + minutes + '分钟' + seconds + '秒'
+                // 设置元素的文本内容
+                box.innerHTML = content;
+
+            }
+            // 实现个位数前面补 0
+            function addZero(n) {
+                return n < 10 ? '0' + n : n;
+            }
+        })()
+        
+  </script>
+</body>
+</html>
