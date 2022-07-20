@@ -7,7 +7,6 @@
     <link rel="Bookmark" type="image/ico" href="images/img_logo.ico" />
     <link rel="icon" type="image/ico" href="images/img_logo.ico" />
     <link rel="shortcut icon" type="image/ico" href="images/img_logo.ico" />
-    <script src="scripts/calendar.js"></script>
 </head>
 <body>
     <div class="top">
@@ -36,13 +35,16 @@
                 <li><a href="diary/210730.html" class="recent">我表白了？</a></li>
                 <li><a href="diary/210514.html" class="recent">逛宜家！</a></li>
                 <li><a href="diary/210502b.html" class="recent">初见滴水湖（下篇）</a></li>
+                <li><a href="diary/210502a.html" class="recent">初见滴水湖（上篇）</a></li>
             </ul>
         </section>
         <section class="Countdown">
             <h2 class="cd">Countdown</h2>
-            <ul>
-            <li id="prooo">
-            </li>
+            <ul class="d">
+                <li class="row"><img alt="github" src="images/love.png" class="a"><p class="cd" id="cda"></p></li>
+                <li class="row"><img alt="github" src="images/1st.png" class="a"><p class="cd" id="cdb"></p></li>
+                <li class="row"><img alt="github" src="images/flowers.png" class="a"><p class="cd" id="cdc"></p></li>
+                <li class="row"><img alt="github" src="images/meet.png" class="a"><p class="cd" id="cdd"></p></li>
             </ul>
         </section>
         </div>
@@ -51,10 +53,10 @@
             <h2 class="dust">About dust</h2>
             <div class="d">
             <ul class="d">
-                <li class="row"><img alt="github" src="images/github-icon-1.svg" class="a"><p>&emsp;@MrWangOnDongChuanRd</p></li>
+                <li class="row"><img alt="github" src="images/github-icon-1.svg" class="a"><a class="row" href="https://github.com/MrWangOnDongChuanRd">&emsp;@MrWangOnDongChuanRd</a></li>
                 <li class="row"><img alt="study" src="images/student_male.png" class="a"><p>&emsp;闵大荒在逃学渣</p></li>
-                <li class="row"><img alt="weibo" src="images/sina-weibo-2.svg" class="a"><p>&emsp;weibo:在意笨蛋的都是小细节_</p></li>
-                <li class="row"><img alt="happy" src="images/263a.png" class="a"><p>&emsp;关于“男德十条”</p></li>
+                <li class="row"><img alt="weibo" src="images/sina-weibo-2.svg" class="a"><a class="row" href="https://weibo.com/u/5603941315?sudaref=weibo.com">&emsp;weibo:在意笨蛋的都是小细节_</a></li>
+                <li class="row"><img alt="happy" src="images/book.png" class="a"><p>&emsp;关于“男德十条”</p></li>
             </ul>
             </div>
         </section>
@@ -72,5 +74,137 @@
     <footer>
         <div>©2022 moonanddust.github.io</div>
     </footer>
+    <script>
+        (function(){
+        var box = document.getElementById('cda');
+        var targetDate = new Date("2021/07/31 00:00:00");
+        runTime();
+        var intervalId = setInterval(runTime, 1000);
+        function runTime() {
+        var currentDate = new Date();
+        var dstSeconds = Math.floor((currentDate.getTime() - targetDate.getTime()) / 1000);
+        if (dstSeconds <= 0) {
+            clearInterval(intervalId);
+            box.innerHTML = '';
+            return;
+        }
+        var days = Math.floor(dstSeconds / (3600 * 24));
+        var seconds = dstSeconds - days * 24 * 3600;
+        var hours = Math.floor(seconds / 3600);
+        seconds -= hours * 3600;
+        var minutes = Math.floor(seconds / 60);
+        seconds -= minutes * 60;
+        days = addZero(days);
+        hours = addZero(hours);
+        minutes = addZero(minutes);
+        seconds = addZero(seconds);
+        var content = '&emsp;already ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds '
+        box.innerHTML = content;
+
+    }
+    function addZero(n) {
+        return n < 10 ? '0' + n : n;
+    }
+})()    //匿名函数自调用
+    </script>
+    <script>
+    (function(){
+        var box = document.getElementById('cdb');
+        var targetDate = new Date("2022/07/31 00:00:00");
+        runTime();
+        var intervalId = setInterval(runTime, 1000);
+        function runTime() {
+            var currentDate = new Date();
+            var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
+            if (dstSeconds <= 0) {
+                clearInterval(intervalId);
+                box.innerHTML = '';
+                return;
+            }
+            var days = Math.floor(dstSeconds / (3600 * 24));
+            var seconds = dstSeconds - days * 24 * 3600;
+            var hours = Math.floor(seconds / 3600);
+            seconds -= hours * 3600;
+            var minutes = Math.floor(seconds / 60);
+            seconds -= minutes * 60;
+            days = addZero(days);
+            hours = addZero(hours);
+            minutes = addZero(minutes);
+            seconds = addZero(seconds);
+            var content = '&emsp;' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds left'
+            box.innerHTML = content;
+    
+        }
+        function addZero(n) {
+            return n < 10 ? '0' + n : n;
+        }
+    })()    //匿名函数自调用
+    </script>
+    <script>
+    (function(){
+        var box = document.getElementById('cdc');
+        var targetDate = new Date("2022/07/14 20:00:00");
+        runTime();
+        var intervalId = setInterval(runTime, 1000);
+        function runTime() {
+            var currentDate = new Date();
+            var dstSeconds = Math.floor((currentDate.getTime() - targetDate.getTime()) / 1000);
+            if (dstSeconds <= 0) {
+                clearInterval(intervalId);
+                box.innerHTML = '';
+                return;
+            }
+            var days = Math.floor(dstSeconds / (3600 * 24));
+            var seconds = dstSeconds - days * 24 * 3600;
+            var hours = Math.floor(seconds / 3600);
+            seconds -= hours * 3600;
+            var minutes = Math.floor(seconds / 60);
+            seconds -= minutes * 60;
+            days = addZero(days);
+            hours = addZero(hours);
+            minutes = addZero(minutes);
+            seconds = addZero(seconds);
+            var content = '&emsp;already ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds '
+            box.innerHTML = content;
+    
+        }
+        function addZero(n) {
+            return n < 10 ? '0' + n : n;
+        }
+    })()    //匿名函数自调用
+    </script>
+    <script>
+    (function(){
+        var box = document.getElementById('cdd');
+        var targetDate = new Date("2022/07/14 20:00:00");
+        runTime();
+        var intervalId = setInterval(runTime, 1000);
+        function runTime() {
+            var currentDate = new Date();
+            var dstSeconds = Math.floor((currentDate.getTime() - targetDate.getTime()) / 1000);
+            if (dstSeconds <= 0) {
+                clearInterval(intervalId);
+                box.innerHTML = '';
+                return;
+            }
+            var days = Math.floor(dstSeconds / (3600 * 24));
+            var seconds = dstSeconds - days * 24 * 3600;
+            var hours = Math.floor(seconds / 3600);
+            seconds -= hours * 3600;
+            var minutes = Math.floor(seconds / 60);
+            seconds -= minutes * 60;
+            days = addZero(days);
+            hours = addZero(hours);
+            minutes = addZero(minutes);
+            seconds = addZero(seconds);
+            var content = '&emsp;already ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds '
+            box.innerHTML = content;
+    
+        }
+        function addZero(n) {
+            return n < 10 ? '0' + n : n;
+        }
+    })()    //匿名函数自调用
+    </script>
 </body>
 </html>

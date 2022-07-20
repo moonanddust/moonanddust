@@ -61,3 +61,11 @@ a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
     text-decoration:none;
     color:black;
 }
+div.time
+{
+    float:left;
+    width:90%;
+    font-size: 1.2em;
+    margin-left: 30px;
+
+}
