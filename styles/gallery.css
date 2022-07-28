@@ -69,3 +69,48 @@ div.time
     margin-left: 30px;
 
 }
+div.side
+{
+    float:left;
+    width:18%;
+    padding-left: 2%;
+}
+div.group
+{
+    float:left;
+    width:70%;
+    padding-left: 3%;
+}
+ul.side{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f7d9e0;
+}
+
+li.side a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li.side a.active {
+    background-color: #c97586;
+    color: white;
+}
+
+li.side a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+div.img {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+div.img img {
+    width: 100%;
+    height: auto;
+}
