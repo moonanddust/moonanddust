@@ -32,10 +32,10 @@
         <section class="recent">
             <h2 class="recent">Recent diaries</h2>
             <ul class="recent">
-                <li><a href="diary/210730.html" class="recent">我表白了？</a></li>
-                <li><a href="diary/210514.html" class="recent">逛宜家！</a></li>
+                <li><a href="diary/220731.html" class="recent">一周年快乐！</a></li>
+                <li><a href="diary/211231.html" class="recent">滨江跨年夜就应该开开心心</a></li>
+                <li><a href="diary/211120.html" class="recent">不可思议的闵大荒之旅</a></li>
                 <li><a href="diary/210502b.html" class="recent">初见滴水湖（下篇）</a></li>
-                <li><a href="diary/210502a.html" class="recent">初见滴水湖（上篇）</a></li>
             </ul>
         </section>
         <section class="Countdown">
@@ -118,7 +118,7 @@
             var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
             if (dstSeconds <= 0) {
                 clearInterval(intervalId);
-                box.innerHTML = '';
+                box.innerHTML = '&emsp;Happy 1st Anniversary!';
                 return;
             }
             var days = Math.floor(dstSeconds / (3600 * 24));
