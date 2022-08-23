@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>try</title>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    height:100%
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #c45888;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+</style>
 </head>
 <body>
-    <script>
-        document.write(Date())
-    </script> 
+<ul>
+  <li><a class="active" href="#home">合照</a></li>
+  <li><a href="#news">花花</a></li>
+  <li><a href="#contact">风景</a></li>
+  <li><a href="#about">小物件</a></li>
+</ul>
 </body>
 </html>
