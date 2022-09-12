@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <title>moon and dust</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="Bookmark" type="image/ico" href="images/img_logo.ico" />
     <link rel="icon" type="image/ico" href="images/img_logo.ico" />
     <link rel="shortcut icon" type="image/ico" href="images/img_logo.ico" />
 </head>
-<body>
+<body background="">
     <div class="top">
-        <div>
+        <div class="logoandtitle">
             <img class="logo" src="images/img_logo.png" alt="logo">
             <h1><a class="title" href="index.html">Moon and Dust</a></h1>
         </div>
@@ -30,7 +31,7 @@
     <div class="s">
         <div class="left">
         <section class="recent">
-            <h2 class="recent">Recent diaries</h2>
+            <h2 class="recent" class="animate__animated animate__flash">Recent diaries</h2>
             <ul class="recent">
                 <li><a href="diary/220820.html" class="recent">完美的夏天！</a></li>
                 <li><a href="diary/220801.html" class="recent" id="tsuki">我们的一周年旅行（Tsuki视角）</a></li>
@@ -57,7 +58,7 @@
                 <li class="row"><img alt="github" src="images/github-icon-1.svg" class="a"><a class="row" href="https://github.com/MrWangOnDongChuanRd">&emsp;@MrWangOnDongChuanRd</a></li>
                 <li class="row"><img alt="study" src="images/student_male.png" class="a"><p>&emsp;闵大荒在逃学渣</p></li>
                 <li class="row"><img alt="weibo" src="images/sina-weibo-2.svg" class="a"><a class="row" href="https://weibo.com/u/5603941315?sudaref=weibo.com">&emsp;weibo:在意笨蛋的都是小细节_</a></li>
-                <li class="row"><img alt="happy" src="images/book.png" class="a"><p><a class="row" href="https://1drv.ms/u/s!Ao64ZRh47qshgUdyYIJGpmiBlOEQ">&emsp;关于“男德十二条”</a></p></li>
+                <li class="row"><img alt="happy" src="images/book.png" class="a"><p><a class="row" href="https://moonanddust.notion.site/2109e2cc6a854fc18ebe3e3af60c1d20">&emsp;关于“男德十二条”</a></p></li>
                 <li class="row"><img alt="study" src="images/scientist.png" class="a"><p>&emsp;绿绿抹茶龙饲养员</p></li>
             </ul>
             </div>
@@ -78,7 +79,7 @@
         <div>©2022 moonanddust.github.io</div>
     </footer>
     <script>
-        (function(){
+        (function(){    //在一起的时间
         var box = document.getElementById('cda');
         var targetDate = new Date("2021/07/31 00:00:00");
         runTime();
@@ -111,7 +112,7 @@
 })()    //匿名函数自调用
     </script>
     <script>
-    (function(){
+    (function(){    //一周年计时
         var box = document.getElementById('cdb');
         var targetDate = new Date("2022/07/31 00:00:00");
         runTime();
@@ -144,7 +145,7 @@
     })()    //匿名函数自调用
     </script>
     <script>
-    (function(){
+    (function(){    //上一次送花的时间
         var box = document.getElementById('cdc');
         var targetDate = new Date("2022/08/18 17:30:00");
         runTime();
@@ -177,7 +178,7 @@
     })()    //匿名函数自调用
     </script>
     <script>
-    (function(){
+    (function(){    //上一次见面的时间
         var box = document.getElementById('cdd');
         var targetDate = new Date("2022/08/20 20:45:00");
         runTime();
@@ -210,7 +211,7 @@
     })()    //匿名函数自调用
     </script>
     <script>
-    (function(){
+    (function(){    //世界抹茶日倒计时
         var box = document.getElementById('cde');
         var targetDate = new Date("2023/08/11 00:00:00");
         runTime();
