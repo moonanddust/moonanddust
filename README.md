@@ -2,4 +2,4 @@
 
 This is a website about our love story.
 
-Please enjoy :)
+Please enjoy! :)
