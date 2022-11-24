@@ -136,17 +136,18 @@ div.right
 div.d
 {
     line-height: 100%;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 div.m
 {
-    line-height: 100%;
-    font-size: 1.1em;
+    line-height: 105%;
+    font-size: 1.2em;
 }
 img.a
 {
-    width:20px;
+    width:25px;
     float:left;
+    margin-top:-3px;
 }
 ul.d
 {
@@ -164,7 +165,7 @@ section.dust
 ul.recent
 {
     line-height: 200%;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-top: -10px;
 }
 a.recent
@@ -179,7 +180,7 @@ a.row
 }
 p.cd
 {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 footer
 {
