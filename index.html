@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>moon and dust</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="Bookmark" type="image/ico" href="images/img_logo.ico" />
     <link rel="icon" type="image/ico" href="images/img_logo.ico" />
     <link rel="shortcut icon" type="image/ico" href="images/img_logo.ico" />
@@ -32,10 +31,10 @@
         <section class="recent">
             <h2 class="recent" class="animate__animated animate__flash">Recent diaries</h2>
             <ul class="recent">
+                <li><a href="diary/230205.html" class="recent" id="tsuki">冬日恋爱记录</a></li>
+                <li><a href="diary/230120.html" class="recent" id="eggtart">你知道“甜甜蛋挞日”吗？</a></li>
                 <li><a href="diary/221118.html" class="recent">秋日恋爱记录</a></li>
                 <li><a href="diary/221003.html" class="recent">火烈鸟恋人</a></li>
-                <li><a href="diary/220820.html" class="recent">完美的夏天！</a></li>
-                <li><a href="diary/220801.html" class="recent" id="tsuki">我们的一周年旅行（Tsuki视角）</a></li>
             </ul>
         </section>
         <section class="Countdown">
@@ -183,7 +182,7 @@
     <script>
     (function(){    //上一次见面的时间
         var box = document.getElementById('cdd');
-        var targetDate = new Date("2023/1/20 23:00:00");
+        var targetDate = new Date("2023/1/31 22:00:00");
         runTime();
         var intervalId = setInterval(runTime, 1000);
         function runTime() {
