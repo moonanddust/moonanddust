@@ -244,7 +244,30 @@ footer
     color:#ffac12;
 }
 @media screen and (max-width: 500px){
-    body{
-        background-color:red;
+    div.left{
+        width:100%;
     }
-  }
+    div.right{
+        width:100%;
+        margin-top:-1em;
+    }
+    div.logoandtitle{
+        width:100%;
+        margin:0 0 0 0;
+    }
+    div.mad{
+        width:100%;
+        margin-left:6em;
+    }
+    div.navi{
+        width:100%;
+        float:none;
+    }
+    div.pics{
+        width:100%;
+    }
+    li.nav{
+        width:100%;
+        float:none;
+    }
+}
