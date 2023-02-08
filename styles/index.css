@@ -242,8 +242,11 @@ footer
 @media screen and (max-width: 550px){
     li.nav{
         display:table;
-        margin-left: -0.75em;
+        margin-left: -1em;
         line-height: 125%;
+    }
+    div.s{
+        padding-left: 1em;
     }
     div.left{
         width:100%;
