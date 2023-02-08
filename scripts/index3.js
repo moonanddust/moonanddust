@@ -1,6 +1,6 @@
-(function(){
-    var box = document.getElementById('prooo');
-    var targetDate = new Date("2021/07/31 00:00:00");
+(function(){    //上一次见面的时间
+    var box = document.getElementById('cdd');
+    var targetDate = new Date("2023/1/31 22:00:00");
     runTime();
     var intervalId = setInterval(runTime, 1000);
     function runTime() {
@@ -21,7 +21,7 @@
         hours = addZero(hours);
         minutes = addZero(minutes);
         seconds = addZero(seconds);
-        var content = 'already: ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds '
+        var content = '&emsp;already ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds '
         box.innerHTML = content;
 
     }
@@ -29,24 +29,3 @@
         return n < 10 ? '0' + n : n;
     }
 })()    //匿名函数自调用
-
-
-
-function password() { 
-    var testV = 1; 
-    var pass1 = prompt('我们是哪天去水族馆的？',''); 
-    while (testV < 3) { 
-    if (!pass1) 
-    history.go(-1); 
-    if (pass1 == "210218") { 
-    alert('密码正确!'); 
-    break; 
-    } 
-    testV+=-1; 
-    var pass1 = prompt('密码错误'); 
-    } 
-    if (pass1!="password" & testV ==3) 
-    history.go(-1); 
-    return " "; 
-    }
-    document.write(password()); 

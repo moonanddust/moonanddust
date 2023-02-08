@@ -1,15 +1,14 @@
-window.onload=function(){
-(function(){
-    var box = document.getElementById('cda');
-    var targetDate = new Date("2021/07/31 00:00:00");
+(function(){    //世界抹茶日倒计时
+    var box = document.getElementById('cde');
+    var targetDate = new Date("2023/08/11 00:00:00");
     runTime();
     var intervalId = setInterval(runTime, 1000);
     function runTime() {
         var currentDate = new Date();
-        var dstSeconds = Math.floor((currentDate.getTime() - targetDate.getTime()) / 1000);
+        var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
         if (dstSeconds <= 0) {
             clearInterval(intervalId);
-            box.innerHTML = '';
+            box.innerHTML = '&emsp;Matcha Day is Today!';
             return;
         }
         var days = Math.floor(dstSeconds / (3600 * 24));
@@ -22,7 +21,7 @@ window.onload=function(){
         hours = addZero(hours);
         minutes = addZero(minutes);
         seconds = addZero(seconds);
-        var content = '&emsp;already: ' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds '
+        var content = '&emsp;' + days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds left'
         box.innerHTML = content;
 
     }
@@ -30,4 +29,3 @@ window.onload=function(){
         return n < 10 ? '0' + n : n;
     }
 })()    //匿名函数自调用
-}
