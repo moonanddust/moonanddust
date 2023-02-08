@@ -21,7 +21,7 @@
     hours = addZero(hours);
     minutes = addZero(minutes);
     seconds = addZero(seconds);
-    var content = '&emsp;already ' + days + ' days ' + hours + ' hours ' + minutes + ' min ' + seconds + ' sec '
+    var content = 'already ' + days + ' days ' + hours + ' hours ' + minutes + ' min ' + seconds + ' sec '
     box.innerHTML = content;
 
 }
