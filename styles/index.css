@@ -19,7 +19,7 @@ div.logoandtitle
 }
 div.mad
 {
-    margin-left:20%;
+    margin-left:6em;
 }
 div.navi
 {
@@ -239,10 +239,10 @@ footer
 {
     color:#ffac12;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 550px){
     li.nav{
         display:table;
-        margin-left: -1em;
+        margin-left: -0.75em;
         line-height: 125%;
     }
     div.left{
