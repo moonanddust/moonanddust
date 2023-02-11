@@ -57,14 +57,6 @@ a.nav
 {
     text-decoration: none;
 }
-div.pics
-{
-    text-align: center;
-}
-img.main
-{
-    width:100%;
-}
 img.logo
 {
     float:left;
@@ -106,6 +98,14 @@ section.moon
     top:-11em;
     margin:0 0;
 }*/
+div.pics
+{
+    text-align: center;
+}
+img.main
+{
+    width:100%;
+}
 h2.recent
 {
     font-size: 2em;

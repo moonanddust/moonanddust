@@ -1,6 +1,6 @@
 (function(){    //上一次送花的时间
     var box = document.getElementById('cdc');
-    var targetDate = new Date("2023/1/20 12:00:00");
+    var targetDate = new Date("2023/2/10 22:00:00");
     runTime();
     var intervalId = setInterval(runTime, 1000);
     function runTime() {
