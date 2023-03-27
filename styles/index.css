@@ -101,6 +101,7 @@ section.moon
 div.pics
 {
     text-align: center;
+    width:100%;
 }
 img.main
 {
