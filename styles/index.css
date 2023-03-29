@@ -2,6 +2,8 @@ body
 {
     background-color: #fdeff2;
     font-family:'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
 }
 div.top
 {
@@ -126,8 +128,9 @@ h2.cd
 div.s
 {
     width:100%;
-    padding-left: 2em;
+    padding-left: 3em;
     float:left;
+
 }
 div.left
 {
