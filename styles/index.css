@@ -23,6 +23,7 @@ div.title
     width:27%;
     float:left;
     /*background: url(../images/img_logo.png) no-repeat left center;*/
+    white-space: nowrap;
 }
 div.navi
 {
@@ -227,9 +228,45 @@ p.cd
     margin-right: 3em;
     margin-left: 2em;
 }
+div.zhanwei
+{
+    width:100%;
+    height:5em;
+    float:left;
+}
+hr
+{
+    border-top:#a44e60 solid 2px;
+}
+table{
+    width:100%;
+    float:left;
+}
+td
+{
+    width:33%;
+    background-color: #d4acad;
+}
+h2.f
+{
+    font-size:1.2em;
+    padding-left:5%;
+    width:25%;
+    float:left;
+
+}
+p.f
+{
+    width:70%;
+    float:left;
+    color: #4f455c;
+}
+p.p
+{
+    font-style: italic;
+}
 footer
 {
-    margin-top: 2em;
     float:left;
     width:100%;
     text-align: center;
@@ -237,8 +274,7 @@ footer
 a.foot
 {
     text-decoration:none;
-    color:black;
-    font-size:small;
+    color:#4f455c;
 }
 #tsuki
 {
@@ -275,7 +311,7 @@ a.foot
     div.title{
         width:72%;
         float:left;
-        font-size: 1em;
+        font-size: 0.9em;
         white-space: nowrap;
     }
     div.navi{
@@ -310,5 +346,21 @@ a.foot
         margin:0;
         border:0;
         margin-left:10%;
+    }
+    h2.f{
+        width:95%;
+        padding:0;
+        margin:0;
+        border:0;
+        float:left;
+        padding-left: 5%;
+        padding-top: 5%;
+        text-align: center;
+    }
+    p.f{
+        padding-left:5%;
+        width:90%;
+        float:left;
+        font-size: small;
     }
 }
