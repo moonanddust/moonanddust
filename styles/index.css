@@ -300,6 +300,17 @@ a.foot
 {
     color:#ffac12;
 }
+.swiper-container {
+    width: 100%;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 @media screen and (max-width: 550px){
     div.logo{
         width:20%;

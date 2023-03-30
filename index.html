@@ -6,6 +6,7 @@
     <title>moon and dust</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/animate.min.css"/>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
     <link rel="Bookmark" type="image/ico" href="images/img_logo.ico" />
     <link rel="icon" type="image/ico" href="images/img_logo.ico" />
     <link rel="shortcut icon" type="image/ico" href="images/img_logo.ico" />
@@ -32,8 +33,13 @@
             </nav>
         </div>
     </div>
-    <div class="pics">
-        <img class="main animate__animated animate__fadeInUp wow" src="https://s1.ax1x.com/2023/03/27/ppysccV.jpg" alt="picture of us.jpg" border="0" />
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="main" src="https://s1.ax1x.com/2023/03/30/pp269RH.jpg" alt="picture of us1.jpg" width="100%" /></div>
+                <div class="swiper-slide"><img class="main" src="https://s1.ax1x.com/2023/03/30/pp2yoiF.jpg" alt="picture of us3.jpg" width="100%"/></div>
+                <div class="swiper-slide"><img class="main" src="https://s1.ax1x.com/2023/03/30/pp2rlsx.jpg" alt="picture of us2.jpg" width="100%"/></div>
+        </div>
     </div>
 
 
@@ -144,6 +150,17 @@
     <script src="scripts/wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+            delay: 2000,
+            },
+            speed:2000,
+            effect:'custom',
+        });
     </script>
 </body>
 </html>
