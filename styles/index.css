@@ -4,6 +4,7 @@ body
     font-family:'Times New Roman', Times, serif;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 div.top
 {
@@ -128,14 +129,14 @@ h2.cd
 div.s
 {
     width:100%;
-    padding-left: 3em;
     float:left;
 
 }
 div.left
 {
     float:left;
-    width:50%;
+    width:45%;
+    padding-left: 5%;
 }
 div.right
 {
@@ -218,6 +219,12 @@ footer
     float:left;
     width:100%;
     text-align: center;
+}
+a.foot
+{
+    text-decoration:none;
+    color:black;
+    font-size:small;
 }
 #tsuki
 {
