@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper Example</title>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+      .swiper-container {
+        width: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img width=100% src="images/mainimage.jpg"></div>
+        <div class="swiper-slide"><img width=100% src="images/mainimage.jpg"></div>
+        <div class="swiper-slide"><img width=100% src="images/mainimage.jpg"></div>
+      </div>
+    </div>
+
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 2000,
+        },
+        speed:2000,
+        effect:'custom',
+      });
+    </script>
+  </body>
+</html>

@@ -9,25 +9,26 @@ body
 div.top
 {
     width:100%;
+}
+div.logo
+{
+    width:5%;
+    margin-left:2%;
+    margin-top: 1%;
+    margin-right:1%;
     float:left;
 }
-div.logoandtitle
+div.title
 {
-    width:40%;
+    width:27%;
     float:left;
-    height:100%;
-    background: url(../images/img_logo.png) no-repeat left center;
-    background-size: 5em;
-    margin-left:1.5em;
-}
-div.mad
-{
-    margin-left:6em;
+    /*background: url(../images/img_logo.png) no-repeat left center;*/
 }
 div.navi
 {
-    width:70%;
+    width:65%;
     display:inline;
+    float:left;
 }
 h1
 {
@@ -60,13 +61,27 @@ a.nav
 {
     text-decoration: none;
 }
+a.new:link,a.new:visited
+{
+    color:#e08196;
+	font-weight:bold;
+	text-align:center;
+	padding:0.5em;
+	text-decoration:none;
+}
+a.new:hover,a.new:active
+{
+    color:#e08196;
+    background-color: #e9dfe5;
+}
+a.new
+{
+    text-decoration: none;
+    font-size: 0.7em;
+}
 img.logo
 {
-    float:left;
-    width:15%;
-    margin-left: 1.5em;
-    margin-top: 1em;
-    vertical-align:middle;
+    width:100%;
 }
 a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
 {
@@ -103,7 +118,6 @@ section.moon
 }*/
 div.pics
 {
-    text-align: center;
     width:100%;
 }
 img.main
@@ -126,7 +140,7 @@ h2.cd
 {
     font-size: 2em;
 }
-div.s
+div.middle
 {
     width:100%;
     float:left;
@@ -175,11 +189,11 @@ div.dcd
 {
     line-height:140%;
 }
-section.moon
+div.moon
 {
     width:100%;
 }
-section.dust
+div.dust
 {
     width:100%;
 }
@@ -187,7 +201,7 @@ div.recent
 {
     width:100%;
 }
-section.Countdown
+div.Countdown
 {
     width:100%;
 }
@@ -251,38 +265,50 @@ a.foot
     color:#ffac12;
 }
 @media screen and (max-width: 550px){
-    li.nav{
-        display:table;
-        margin-left: -1em;
-        line-height: 125%;
+    div.logo{
+        width:20%;
+        float:left;
+        padding:0;
+        margin:4% 4% 4% 4%;
+        border:0;
     }
-    div.s{
-        padding-left: 1em;
-    }
-    div.left{
-        width:100%;
-        margin-left:0;
-    }
-    div.right{
-        width:100%;
-        margin-top:-1em;
-    }
-    div.logoandtitle{
-        width:100%;
-        margin:0 0 0 0;
-    }
-    div.mad{
-        width:100%;
-        margin-left:6em;
+    div.title{
+        width:72%;
+        float:left;
+        font-size: 1em;
+        white-space: nowrap;
     }
     div.navi{
-        width:100%;
+        width:50%;
+        font-size: 0.9em;
+        padding-left: 5%;
+        padding-right: 45%;
+        padding-bottom: 5%;
+    }
+    ul.nav{
+        padding:0;
+        border:0;
+        margin:0;
     }
     div.pics{
         width:100%;
+        float:left;
     }
-    li.nav{
+    div.middle{
         width:100%;
-        float:none;
+    }
+    div.left{
+        width:90%;
+        padding:0;
+        margin:0;
+        border:0;
+        margin-left:10%;
+    }
+    div.right{
+        width:90%;
+        padding:0;
+        margin:0;
+        border:0;
+        margin-left:10%;
     }
 }

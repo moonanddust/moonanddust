@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/view.css">
-    <title>轮播图</title>
-</head>
-<body>
-    <!-- 创建外部展示容器 -->
-    <div class="demo">
-        <!-- 创建图片存储容器 -->
-        <div class="demo1">
-            <!-- 引入轮播图图片 -->
-            <img src="images/1f44d.png" alt=""/>
-            <img src="images/1f4d6.png" alt=""/>
-            <img src="images/1st.png" alt=""/>
-            <img src="images/student_female.png" alt=""/>
-            <img src="images/student_female.png" alt=""/>
-        </div>
+    <title>轮播图示例</title>
+    <style>
+      /* CSS 样式 */
+      .slideshow-container {
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+      }
+
+      .slides {
+        display: none;
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation-name: fade;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+      }
+
+      .slides.active {
+        display: block;
+        opacity: 1;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML 结构 -->
+    <div class="slideshow-container">
+      <img class="slides active" src="images/1f44d.png">
+      <img class="slides" src="images/1f4d6.png">
+      <img class="slides" src="images/1st.png">
     </div>
-</body>
+    <!-- JavaScript 代码 -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var slides = document.getElementsByClassName("slides");
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].classList.remove("active");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex-1].classList.add("active");
+        setTimeout(showSlides, 2000); // 更改轮播图时间间隔，单位为毫秒
+      }
+    </script>
+  </body>
 </html>

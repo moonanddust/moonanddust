@@ -1,41 +1,22 @@
-/* 
-轮播图demo
-*/
-.demo{
-    width:1200px;
-    height:400px;
-    margin:0px auto;
-    /* background-color:aquamarine; */
-    overflow: hidden;/*用于隐藏超出展示容器的内容部分*/
-}
-.demo1{
-    width:6000px;
-    height:400px;
-    margin:0px auto;
-    animation:text 30s infinite  linear;
-    font-size:0px;/*消除图片间隔*/
-    
-}
-.demo1 img{
-    width:1200px;
-    height:400px;
-    float:left;
-}
-@keyframes text {          /*0%-20%是播放下一个图片，0%-10%是图片暂停的时间*/
-    0%,5%{
-        margin-left:0px;
-    }
-    20%,30%{
-        margin-left:-1200px;
-    }
-    40%,50%{
-        margin-left:-2400px;
-    }
-    60%,70%{
-        margin-left:-3600px;
-    }
-    80%,90%{
-        margin-left:-4800px;
-    }
-}
-
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slides {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slides.active {
+    display: block;
+    opacity: 1;
+  }
+  
