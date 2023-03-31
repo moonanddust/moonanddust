@@ -5,10 +5,12 @@ body
     margin:0;
     padding:0;
     overflow-x: hidden;
+    
 }
 div.top
 {
     width:100%;
+    
 }
 div.logo
 {
@@ -215,7 +217,7 @@ ul.recent
 a.recent
 {
     text-decoration: none;
-    color:royalblue;
+    color:#5a79ba;
 }
 a.row
 {
@@ -280,6 +282,10 @@ a.foot
 {
     color:#fe6570;
 }
+#dust
+{
+    color:#5a79ba;
+}
 #matcha
 {
     color:#5da41b;
@@ -312,6 +318,9 @@ a.foot
     align-items: center;
   }
 @media screen and (max-width: 550px){
+    body{
+        font-family:'Times New Roman', Times, serif;
+    }
     div.logo{
         width:20%;
         float:left;

@@ -54,6 +54,7 @@
                     <li><a class='recent' id="r2"></a></li>
                     <li><a class='recent' id="r3"></a></li>
                     <li><a class='recent' id="r4"></a></li>
+                    <li><a class="recent" href="/">What's new? - 本站日志</a>
                     <!--<li><a href="diary/230205.html" class="recent" id="tsuki">冬日恋爱记录</a></li>
                     <li><a href="diary/230120.html" class="recent" id="eggtart">你知道“甜甜蛋挞日”吗？</a></li>
                     <li><a href="diary/221118.html" class="recent">秋日恋爱记录</a></li>
@@ -84,11 +85,11 @@
                 <ul class="d">
                     <li class="row"><img alt="github" src="images/github-icon-1.svg" class="a1"><a class="row" href="https://github.com/MrWangOnDongChuanRd">&emsp;@MrWangOnDongChuanRd</a></li>
                     <li class="row"><img alt="study" src="images/student_male.png" class="a1"><p>&emsp;东川路小王</p></li>
+                    <li class="row"><img alt="note" src="images/note.png" class="a1"><p id="dust">&emsp;在本站已发表文章 <span id="dustcount"></span> 篇</p></li>
                     <li class="row"><img alt="weibo" src="images/sina-weibo-2.svg" class="a1"><a class="row" href="https://weibo.com/u/5603941315?sudaref=weibo.com">&emsp;weibo:在意笨蛋的都是小细节_</a></li>
                     <li class="row"><img alt="happy" src="images/book.png" class="a1"><p><a class="row" href="https://moonanddust.notion.site/2109e2cc6a854fc18ebe3e3af60c1d20">&emsp;关于“男德十二条”</a></p></li>
-                    <li class="row"><img alt="study" src="images/scientist.png" class="a1"><p>&emsp;绿绿抹茶龙饲养员</p></li>
-                    <li class="row"><img alt="ai" src="images/ai2.png" class="a1"><p>&emsp;ChatWANG™</p></li>
-                    <li class="row"><img alt="news" src="images/news.png" class="a1"><a class="row" href="/"><p>&emsp;What's new? - 本站日志</p></a></li>
+                    <li class="row"><img alt="breed" src="images/scientist.png" class="a1"><p>&emsp;绿绿抹茶龙饲养员</p></li>
+                    <!--<li class="row"><img alt="ai" src="images/ai2.png" class="a1"><p>&emsp;ChatWANG™</p></li>-->
                 </ul>
                 </div>
             </div>
@@ -98,6 +99,7 @@
                 <ul class="d">
                     <li class="row"><img alt="moon" src="images/icon_moon.png" class="a1"><p>&emsp;@Tsuki</p></li>
                     <li class="row"><img alt="github" src="images/student_female.png" class="a1"><p>&emsp;五角场山田琢磨</p></li>
+                    <li class="row"><img alt="note" src="images/news.png" class="a1"><p id="tsuki">&emsp;在本站已发表文章 <span id="mooncount"></span> 篇</p></li>
                     <li class="row"><img alt="dinosaur" src="images/dinosaur.png" class="a1"><p><a class="row" id="matcha" href="diary/220811.html">&emsp;绿绿抹茶龙</a></p></li>
                     <li class="row"><img alt="lotus" src="images/lotus.png" class="a1"><a class="row" href="https://moonanddust.notion.site/4bad7aa9653641ca958b7769b3e8b67e"><p><span id="xiao">&emsp;小</span><span id="he">荷</span><span id="hua">花</span></p></a></li>
                 </ul>
@@ -109,7 +111,7 @@
     <div class="zhanwei">
     </div>
 
-    <table cellspacing="0">
+    <table cellspacing="0" class="animate__animated animate__fadeInUp wow">
         <tr>
             <td valign="top">
                 <h2 class="f">README</h2>
@@ -149,6 +151,7 @@
     <script src="scripts/index6.js"></script>
     <script src="scripts/click.js"></script>
     <script src="scripts/wow.min.js"></script>
+    <script src="scripts/countLinks.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -157,9 +160,9 @@
         var mySwiper = new Swiper('.swiper-container', {
             loop: true,
             autoplay: {
-            delay: 2000,
+            delay: 3000,
             },
-            speed:2000,
+            speed:3000,
             effect:'custom',
         });
     </script>

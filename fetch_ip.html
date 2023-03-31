@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>分割线例子</title>
+  </head>
+  <body>
+    <div id="location"></div>
+    <script>
+        // 从ipify获取IP地址
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => {
+        const ipAddress = data.ip;
+        
+        // 从ip-api获取地理位置信息
+        fetch(`https://ipapi.co/${ipAddress}/json/`)
+          .then(response => response.json())
+          .then(data => {
+            const city = data.city;
+            const region = data.region;
+            const country = data.country_name;
+            
+            // 在HTML页面中显示地理位置信息
+            document.getElementById('location').textContent = `${city}`;
+          });
+      });
+    
+      </script>
+  </body>
+</html>
