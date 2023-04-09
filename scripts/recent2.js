@@ -45,6 +45,8 @@ function getRecentLinks() {
     xhttp.send();
   }
   
+  getRecentLinks()
+
   // Update recent links every 5 seconds
   setInterval(function() {
     getRecentLinks();
