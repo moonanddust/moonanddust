@@ -1,71 +1,62 @@
 body
 {
     background-color: #fdeff2;
-    font-size: 100%;
-    width:100%;
+    font-family:'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;   
+    
+}
+div.title
+{
+    width:27%;
+    float:left;
+    /*background: url(../images/img_logo.png) no-repeat left center;*/
 }
 div.top
 {
-    display:inline;
+    width:100%;
+}
+div.logo
+{
+    width:5%;
+    margin-left:2%;
+    margin-top: 1%;
+    margin-right:1%;
+    float:left;
+}
+div.message
+{
+    float:left;
+    color:#a44e60;
+    font-size:1.5em;
+    margin-left: 10%;
 }
 h1
 {
-    font-family:'Times New Roman', Times, serif;
     font-size: 2.5em;
     float:left;
-    width:25%;
-}
-nav
-{
-    float:left;
-    font-size: 2.1875em;
-    font-family:'Times New Roman', Times, serif;
-    width:auto;
-    margin-left: 30px;
-}
-ul.nav
-{
-    list-style-type: none;
-}
-li.nav
-{
-    display: inline;
-}
-a.nav:link,a.nav:visited
-{
-    color:#a44e60;
-	font-weight:bold;
-	width:140px;
-	text-align:center;
-	padding:20px;
-	text-decoration:none;
-}
-a.nav:hover,a.nav:active
-{
-    color:#a44e60;
-    background-color: #e9dfe5;
-}
-a.nav
-{
-    text-decoration: none;
+    width:80%;
 }
 img.logo
 {
-    float:left;
-    width:5%;
-    margin-left: 30px;
-    margin-top: 1em;
+    width:100%;
 }
 a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
 {
     text-decoration:none;
     color:black;
 }
-p.sorry
+div.introduction
 {
-    float: left;
+    float:left;
+    width:80%;
     text-align: center;
-    width:90%;
-    font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.4em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color:#e08196;
 }
