@@ -12,6 +12,7 @@ div.title
     width:27%;
     float:left;
     /*background: url(../images/img_logo.png) no-repeat left center;*/
+    white-space: nowrap;
 }
 div.top
 {
