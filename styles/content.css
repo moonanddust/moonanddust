@@ -125,3 +125,9 @@ a.quote
     text-decoration: none;
     color:royalblue;
 }
+div.comment
+{
+    margin-left:5%;
+    width: 100%;
+    float: left;
+}
