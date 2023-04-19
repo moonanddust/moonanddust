@@ -60,12 +60,6 @@ img.logo
     margin-left: 30px;
     margin-top: 1em;
 }
-div.left
-{
-    float:left;
-    width:55%;
-    margin-left:5%;
-}
 h2
 {
     font-family: Apple LiSung Light,SimHei,sans-serif;
@@ -91,15 +85,6 @@ p.author,p.date
 {
     font-family: Apple LiSung Light,SimHei,sans-serif;
     font-size: 1.1em;
-}
-div.images
-{
-    float:left;
-    width:30%;
-    margin-left: 40px;
-    margin-top: 0px;
-    overflow-y: auto;
-    height:75em;
 }
 img
 {
@@ -130,4 +115,19 @@ div.comment
     margin-left:5%;
     width: 100%;
     float: left;
+}
+div.left
+{
+    float:left;
+    width:55%;
+    margin-left:5%;
+}
+div.images
+{
+    float:left;
+    margin-left: 4%;
+    margin-right: 4%;
+    width:32%;
+    overflow-y: auto;
+    height:75em;
 }
