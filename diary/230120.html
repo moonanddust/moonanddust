@@ -23,6 +23,7 @@
             </ul>
         </nav>
     </div>
+    <div class="container">
     <div class="left">
         <h2>你知道“甜甜蛋挞日”吗？</h2>
         <p class="author">Tsuki</p>
@@ -54,6 +55,7 @@
         <img src="../images/230120/6.jpeg">
         <p class="legend">试图复刻19年在渡轮上的合影</p>
     </div>
+    </div>
     <div class="comment">
         <h2>评论区</h2>
     </div>
@@ -62,4 +64,10 @@
     <footer>
         <div>©2022-2023 moonanddust.love</div>
     </footer>
+    <script>
+        const leftDiv = document.querySelector('.left');
+        const imagesDiv = document.querySelector('.images');
+        const leftDivHeight = leftDiv.offsetHeight;
+        imagesDiv.style.height = leftDivHeight + 'px';
+      </script>
 </body>

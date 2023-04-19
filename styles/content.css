@@ -116,6 +116,10 @@ div.comment
     width: 100%;
     float: left;
 }
+div.container
+{
+    width:100%;
+}
 div.left
 {
     float:left;
@@ -128,6 +132,5 @@ div.images
     margin-left: 4%;
     margin-right: 4%;
     width:32%;
-    overflow-y: auto;
-    height:75em;
+    overflow-y: auto;;
 }

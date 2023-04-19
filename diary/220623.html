@@ -24,6 +24,7 @@
         </nav>
     </div>
     <div class="whole">
+    <div class="container">
     <div class="left">
         <h2>在太古里逛街</h2>
         <p class="author">Yuchen Wang</p>
@@ -44,6 +45,7 @@
         <p class="legend">小猫进行茶艺展示</p>
     </div>
 </div>
+    </div>
     <div class="comment">
         <h2>评论区</h2>
     </div>
@@ -52,4 +54,10 @@
     <footer>
         <div>©2022-2023 moonanddust.love</div>
     </footer>
+    <script>
+        const leftDiv = document.querySelector('.left');
+        const imagesDiv = document.querySelector('.images');
+        const leftDivHeight = leftDiv.offsetHeight;
+        imagesDiv.style.height = leftDivHeight + 'px';
+      </script>
 </body>

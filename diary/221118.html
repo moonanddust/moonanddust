@@ -23,6 +23,7 @@
             </ul>
         </nav>
     </div>
+    <div class="container">
     <div class="left">
         <h2>秋日恋爱记录</h2>
         <p class="author">Yuchen Wang</p>
@@ -52,6 +53,7 @@
         <img src="../images/221118/5.jpg">
         <p class="legend">前滩之旅的最后一天</p>
     </div>
+    </div>
     <div class="comment">
         <h2>评论区</h2>
     </div>
@@ -60,4 +62,10 @@
     <footer>
         <div>©2022-2023 moonanddust.love</div>
     </footer>
+    <script>
+        const leftDiv = document.querySelector('.left');
+        const imagesDiv = document.querySelector('.images');
+        const leftDivHeight = leftDiv.offsetHeight;
+        imagesDiv.style.height = leftDivHeight + 'px';
+      </script>
 </body>

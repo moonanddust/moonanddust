@@ -23,6 +23,7 @@
             </ul>
         </nav>
     </div>
+    <div class="container">
     <div class="left">
         <h2>我表白了？</h2>
         <p class="author">Yuchen Wang</p>
@@ -61,6 +62,7 @@
         <p class="legend">于是我去一家罗森蹭了店员的热点</p>
         
     </div>
+    </div>
     <div class="comment">
         <h2>评论区</h2>
     </div>
@@ -69,4 +71,10 @@
     <footer>
         <div>©2022-2023 moonanddust.love</div>
     </footer>
+    <script>
+        const leftDiv = document.querySelector('.left');
+        const imagesDiv = document.querySelector('.images');
+        const leftDivHeight = leftDiv.offsetHeight;
+        imagesDiv.style.height = leftDivHeight + 'px';
+      </script>
 </body>

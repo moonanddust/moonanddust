@@ -23,6 +23,7 @@
             </ul>
         </nav>
     </div>
+    <div class="container">
     <div class="left">
         <h2>又见滴水湖</h2>
         <p class="author">Yuchen Wang</p>
@@ -36,7 +37,7 @@
         <p class="content">p.s. 希望自己不要再犯错了（指丢了她送我的合照）</p>
     </div>
     <div class="images">
-        <img src="../images/220225/1.JPG">
+        <img src="../images/220225/1.jpg">
         <p class="legend">马赛的蔚蓝海岸（文中写成了阿维尼翁）</p>
         <img src="../images/220225/2.JPG">
         <p class="legend">临港的蔚蓝蓝天，天文博物馆初见</p>
@@ -48,6 +49,7 @@
         <p class="legend">我烤金针菇，技术一流</p>
 
     </div>
+    </div>
     <div class="comment">
         <h2>评论区</h2>
     </div>
@@ -56,4 +58,10 @@
     <footer>
         <div>©2022-2023 moonanddust.love</div>
     </footer>
+    <script>
+        const leftDiv = document.querySelector('.left');
+        const imagesDiv = document.querySelector('.images');
+        const leftDivHeight = leftDiv.offsetHeight;
+        imagesDiv.style.height = leftDivHeight + 'px';
+      </script>
 </body>
