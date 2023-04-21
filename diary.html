@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>diary section</title>
     <link rel="stylesheet" href="styles/diary.css" />
+    <link rel="stylesheet" href="styles/animate.min.css"/>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
     <link rel="Bookmark" type="image/ico" href="images/img_logo.ico" />
     <link rel="icon" type="image/ico" href="images/img_logo.ico" />
     <link rel="shortcut icon" type="image/ico" href="images/img_logo.ico" />
 </head>
 <body>
     <div class="top">
-        <div class="logoandtitle">
-            <!--<img class="logo" src="images/img_logo.png" alt="logo">-->
-            <div class="mad">
-                <h1><a class="title" href="index.html">Moon and Dust</a></h1>
-            </div>
+        <div class="logo animate__animated animate__fadeInLeft wow">
+            <img class="logo" src="images/img_logo.png" alt="logo">
         </div>
-        <div class="navi">
-            <nav>
-                <ul class="nav">
-                    <li class="nav"><a class="nav" href="https://moonanddust.notion.site/678e683838844f89ae82c6001800255e?v=c80768e7dce347be8904653e4f181a92">calendar</a></li>
-                    <li class="nav"><a class="nav" href="diary.html">diary</a></li>
-                    <li class="nav"><a class="nav" href="gallery.html">gallery</a></li>
-                    <li class="nav"><a class="nav" href="message.html">message</a></li>
-                </ul>
-            </nav>
+        <div class="tit animate__animated animate__fadeInDown wow">
+            <h1><a class="title" href="index.html">Moon and Dust</a></h1>
         </div>
+    <div class="navi animate__animated animate__fadeInRight wow" >
+        <nav>
+            <ul class="nav">
+                <li class="nav"><a class="nav" href="https://moonanddust.notion.site/moonanddust/678e683838844f89ae82c6001800255e?v=99ee58f418f046c296af49ccae9b1b61">calendar</a></li>
+                <li class="nav"><a class="nav" href="diary.html">diary</a></li>
+                <li class="nav"><a class="nav" href="gallery.html">gallery</a></li>
+                <li class="nav" id="new-section"><a class="nav" href="message.html">message</a></li>
+                <!--<li class="nav"><a class="new" href="">What's new?</a></li>-->
+            </ul>
+        </nav>
     </div>
-    <div class="title">
+</div>
+    <div class="title animate__animated animate__zoomIn wow">
         <h2>Diary | 小作文目录</h2>
     </div>
-    <div class="subtitle">
+    <div class="subtitle animate__animated animate__zoomIn wow">
         <h3>Before | 交往前</h3>
         <dl>
             <dt><a class="d-title" href="diary/210218.html" id="dust">新年相约水族馆</a></dt>
@@ -50,7 +53,7 @@
             <dd>这种梦里经常出现的场景怎么就在北外滩发生了？</dd>
         </dl>
     </div>
-    <div class="subtitle">
+    <div class="subtitle animate__animated animate__zoomIn wow">
         <h3>In love | 恋爱中</h3>
         <dl>
             <dt><a class="d-title" href="diary/211120.html" id="dust">不可思议的闵大荒之旅</a></dt>
@@ -93,15 +96,19 @@
             <dd></dd>
         </dl>
     </div>
-    <div class="subtitle">
+    <div class="subtitle animate__animated animate__zoomIn wow">
         <h3>After break-up | 分手后</h3>
         <dl>
             <dt><a class="d-title" href="diary/220714.html" id="dust">一封道歉信</a></dt>
             <dd>我一定好好遵守男德</dd>
         </dl>
     </div>
-    <footer>
+    <footer class="animate__animated animate__fadeInDown wow">
         <div>©2022-2023 moonanddust.love</div>
     </footer>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

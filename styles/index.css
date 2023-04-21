@@ -317,9 +317,6 @@ a.foot
     align-items: center;
   }
 @media screen and (max-width: 550px){
-    body{
-        font-family:'宋体', Times, serif;
-    }
     div.logo{
         width:20%;
         float:left;
