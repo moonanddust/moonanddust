@@ -159,6 +159,10 @@ div.images
 }
 .commento-root-font
 {
-    font-size:1em;
+    font-size:2em;
+}
+.commento-root
+{
+    font-size:2em;
 }
 }
