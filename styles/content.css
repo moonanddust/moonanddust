@@ -60,6 +60,8 @@ img.logo
     margin-left: 30px;
     margin-top: 1em;
 }
+
+
 h2
 {
     font-family: Apple LiSung Light,SimHei,sans-serif;
@@ -113,7 +115,7 @@ a.quote
 div.comment
 {
     margin-left:5%;
-    width: 100%;
+    width: 95%;
     float: left;
 }
 div.container
@@ -133,4 +135,26 @@ div.images
     margin-right: 4%;
     width:32%;
     overflow-y: auto;;
+}
+@media screen and (max-width: 500px){
+    div.left{
+        float:left;
+        width:90%;
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    div.images{
+        float:left;
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+        overflow-y: auto;;
+        height:500px;
+    }
+    div.comment
+{
+    margin-left:5%;
+    width: 95%;
+    float: left;
+}
 }
