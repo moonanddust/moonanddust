@@ -157,4 +157,8 @@ div.images
     width: 95%;
     float: left;
 }
+.commento-root-font
+{
+    font-size:1em;
+}
 }
