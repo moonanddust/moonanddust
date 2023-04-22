@@ -61,3 +61,33 @@ div.introduction
     font-weight: bold;
     color:#e08196;
 }
+div.commento-root
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+        width:80%;
+    }
+@media screen and (max-width: 500px){
+    div.commento-root
+    {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+    div.commento-root-font
+    {
+        font-size: 2em;
+    }
+    div.message{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        line-height: 100%;
+    }
+    div.introduction{
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+}
