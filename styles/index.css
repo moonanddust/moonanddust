@@ -141,7 +141,7 @@ img.a2
 ul.d
 {
     list-style-type: none;
-    margin-left: -1.5em;
+    margin-left: -5%;
 }
 div.dcd
 {
@@ -180,9 +180,10 @@ a.row
     color:#5a79ba;
     margin-left: 3%;
 }
-p.row
+a.row2
 {
-    padding-left: 3%;
+    margin-left: 3%;
+    text-decoration: none;
 }
 a.new
 {

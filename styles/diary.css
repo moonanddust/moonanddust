@@ -8,38 +8,24 @@ body
 div.top
 {
     width:100%;
-    
 }
 div.logo
 {
-    width:5%;
-    margin-left:2%;
-    margin-top: 1%;
-    margin-right:1%;
-    float:left;
+    width:30%;
+    float: left;
 }
-div.tit
+img.logoandtitle
 {
-    width:27%;
-    float:left;
-    /*background: url(../images/img_logo.png) no-repeat left center;*/
-    white-space: nowrap;
+    width: 100%;
 }
 div.navi
 {
-    width:65%;
+    margin-left: 10%;
+    width:60%;
     display:inline;
     float:left;
-}
-h1
-{
-    font-size: 2.5em;
-    float:left;
-    width:80%;
-}
-nav
-{
-    font-size: 2.1875em;
+    font-size: 2.2em;
+    margin-top: 0.5%;
 }
 li.nav
 {
@@ -50,45 +36,28 @@ a.nav:link,a.nav:visited
     color:#a44e60;
 	font-weight:bold;
 	text-align:center;
-	padding:0.5em;
+	padding:2.5%;
 	text-decoration:none;
 }
 a.nav:hover,a.nav:active
 {
     color:#a44e60;
     background-color: #e9dfe5;
-}
-a.nav
-{
     text-decoration: none;
-}
-a.new:link,a.new:visited
-{
-    color:#e08196;
-	font-weight:bold;
-	text-align:center;
-	padding:0.5em;
-	text-decoration:none;
-}
-a.new:hover,a.new:active
-{
-    color:#e08196;
-    background-color: #e9dfe5;
-}
-a.new
-{
-    text-decoration: none;
-    font-size: 0.7em;
-}
-img.logo
-{
-    width:100%;
 }
 a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
 {
     text-decoration:none;
     color:black;
 }
+div.navi-mob
+{
+    display: none;
+}
+
+
+
+
 div.title
 {
     float: left;
@@ -140,33 +109,39 @@ a.d-title
 
 @media screen and (max-width: 500px){
     div.logo{
-        width:20%;
+        width:100%;
         float:left;
-        padding:0;
-        margin:4% 4% 4% 4%;
-        border:0;
-    }
-    div.tit{
-        width:72%;
-        float:left;
-        font-size: 0.9em;
-        white-space: nowrap;
     }
     div.navi{
-        width:50%;
-        font-size: 0.9em;
-        padding-left: 5%;
-        padding-right: 45%;
-        padding-bottom: 5%;
+        display: none;
     }
-    ul.nav{
-        padding:0;
-        border:0;
+    div.navi-mob{
+        width:100%;
         margin:0;
+        display: block;
+        float: left;
+        font-size: 2em;
+	    font-weight:bold;
+        margin-top: -10%;
     }
+    li.nav-mob{
+        list-style-type: none;
+    }
+    a.nav-mob{
+        text-decoration: none;
+        color:#a44e60;
+    }
+    a.nav-mob:visited{
+        text-decoration: none;
+        color:#a44e60;
+    }
+
+
+    
     div.title{
         width:85%;
         margin-right: 10%;
+        margin-top: -5%;
     }
     div.subtitle{
         width:85%;
