@@ -352,4 +352,12 @@ div.navi-mob
         float:left;
         font-size: small;
     }
+    a.row
+{
+    margin-left: 5%;
+}
+a.row2
+{
+    margin-left: 5%;
+}
 }
