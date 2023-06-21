@@ -255,6 +255,7 @@ a.foot
 #matcha
 {
     color:#5da41b;
+    color:rgb(57, 169, 76);
 }
 #xiao
 {
@@ -271,6 +272,10 @@ a.foot
 #eggtart
 {
     color:#ffac12;
+}
+#bunny
+{
+    color:#e198b4;
 }
 .swiper-container {
     width: 100%;
