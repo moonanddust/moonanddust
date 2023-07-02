@@ -1,14 +1,14 @@
-(function(){    //上一次见面的时间
-    var box = document.getElementById('cdd');
-    var targetDate = new Date("2023/7/1 23:00:00");
+(function(){    //凉凉冰激凌日
+    var box = document.getElementById('cdh');
+    var targetDate = new Date("2024/7/1 00:00:00");
     runTime();
     var intervalId = setInterval(runTime, 1000);
     function runTime() {
         var currentDate = new Date();
-        var dstSeconds = Math.floor((currentDate.getTime() - targetDate.getTime()) / 1000);
+        var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
         if (dstSeconds <= 0) {
             clearInterval(intervalId);
-            box.innerHTML = '';
+            box.innerHTML = '&emsp;Cool Ice Cream Day is today!';
             return;
         }
         var days = Math.floor(dstSeconds / (3600 * 24));
@@ -21,7 +21,7 @@
         hours = addZero(hours);
         minutes = addZero(minutes);
         seconds = addZero(seconds);
-        var content = 'already ' + days + ' days ' + hours + ' hours ' + minutes + ' min ' + seconds + ' sec '
+        var content = days + ' days ' + hours + ' hours ' + minutes + ' min ' + seconds + ' sec left'
         box.innerHTML = content;
 
     }
