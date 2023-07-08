@@ -1,0 +1,167 @@
+body
+{
+    background-color: #fdeff2;
+    font-size: 100%;
+    width:100%;
+    font-family: 'Times New Roman', Times, serif;
+    padding:0;
+    margin: 0;
+}
+div.top
+{
+    width:100%;
+}
+div.logo
+{
+    width:30%;
+    float: left;
+}
+img.logoandtitle
+{
+    width: 100%;
+}
+div.navi
+{
+    margin-left: 10%;
+    width:60%;
+    display:inline;
+    float:left;
+    font-size: 2.2em;
+    margin-top: 0.5%;
+}
+li.nav
+{
+    display: inline;
+}
+a.nav:link,a.nav:visited
+{
+    color:#a44e60;
+	font-weight:bold;
+	text-align:center;
+	padding:2.5%;
+	text-decoration:none;
+}
+a.nav:hover,a.nav:active
+{
+    color:#a44e60;
+    background-color: #e9dfe5;
+    text-decoration: none;
+}
+a.title:link,a.title:active,a.title:hover,a.title.visited,a.title
+{
+    text-decoration:none;
+    color:black;
+}
+div.navi-mob
+{
+    display: none;
+}
+
+
+h2
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 2.2em;
+}
+h3
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1.9em;
+}
+p.content
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1.1em;
+    line-height: 200%;
+    text-indent:2em;
+}
+p.date
+{
+    font-style:italic;
+}
+p.author,p.date
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1.1em;
+}
+img
+{
+    width:100%;
+    line-height: 100%;
+}
+.legend
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1em;
+    text-align: center;
+    line-height: 20%;
+}
+footer
+{
+    font-family: Apple LiSung Light,SimHei,sans-serif;
+    font-size: 1em;
+    float:left;
+    width:90%;
+}
+a.quote
+{
+    text-decoration: none;
+    color:royalblue;
+}
+div.comment
+{
+    margin-left:5%;
+    width: 95%;
+    float: left;
+}
+div.container
+{
+    width:100%;
+    float:left;
+}
+div.left
+{
+    float:left;
+    width:90%;
+    margin-left:5%;
+}
+@media screen and (max-width: 500px){
+    div.logo{
+        width:100%;
+        float:left;
+    }
+    div.navi{
+        display: none;
+    }
+    div.navi-mob{
+        width:100%;
+        margin:0;
+        display: block;
+        float: left;
+        font-size: 2em;
+	    font-weight:bold;
+        margin-top: -10%;
+    }
+    li.nav-mob{
+        list-style-type: none;
+    }
+    a.nav-mob{
+        text-decoration: none;
+        color:#a44e60;
+    }
+    a.nav-mob:visited{
+        text-decoration: none;
+        color:#a44e60;
+    }
+    div.left{
+        float:left;
+        width:90%;
+        margin-left:5%;
+        margin-right: 5%;
+    }
+    div.comment{
+    margin-left:5%;
+    width: 95%;
+    float: left;
+    }
+}

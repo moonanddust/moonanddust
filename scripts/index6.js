@@ -8,7 +8,7 @@
         var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
         if (dstSeconds <= 0) {
             clearInterval(intervalId);
-            box.innerHTML = '&emsp;SpongeBob&KFC Day is Today!';
+            box.innerHTML = '&emsp;Egg Tarts Day is Today!';
             return;
         }
         var days = Math.floor(dstSeconds / (3600 * 24));
