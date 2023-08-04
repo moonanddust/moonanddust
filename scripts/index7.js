@@ -8,7 +8,7 @@
         var dstSeconds = Math.floor((targetDate.getTime() - currentDate.getTime()) / 1000);
         if (dstSeconds <= 0) {
             clearInterval(intervalId);
-            box.innerHTML = '&emsp;2nd anniversary is today!';
+            box.innerHTML = 'Happy 2nd Anniversary!';
             return;
         }
         var days = Math.floor(dstSeconds / (3600 * 24));

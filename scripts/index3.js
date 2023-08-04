@@ -1,6 +1,6 @@
 (function(){    //上一次见面的时间
     var box = document.getElementById('cdd');
-    var targetDate = new Date("2023/7/17 20:15:00");
+    var targetDate = new Date("2023/8/4 2:00:00");
     runTime();
     var intervalId = setInterval(runTime, 1000);
     function runTime() {
