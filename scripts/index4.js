@@ -1,6 +1,6 @@
 (function(){    //世界抹茶日倒计时
     var box = document.getElementById('cde');
-    var targetDate = new Date("2023/08/11 00:00:00");
+    var targetDate = new Date("2024/08/11 00:00:00");
     runTime();
     var intervalId = setInterval(runTime, 1000);
     function runTime() {
